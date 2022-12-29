@@ -59,7 +59,7 @@ import {
             
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-              <DesktopNav />
+              <DesktopNav  />
             </Flex>
           </Flex>
   
