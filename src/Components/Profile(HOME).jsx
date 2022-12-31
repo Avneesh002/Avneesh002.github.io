@@ -6,13 +6,17 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 export default function Home() {
+  const [isMoreThan820] = useMediaQuery("(min-width:768px)");
+  const [isLessThan820] = useMediaQuery("(max-width:1000px)");
+
   return (
     <Stack
       bg={"gray.100"}
-      minH={"100vh"}
+      minH={isMoreThan820 && isLessThan820 ? "70vh" : "100vh"}
       direction={{ base: "column", md: "row" }}
     >
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -28,7 +32,7 @@ export default function Home() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "red.400",
+                bg: "blue.400",
                 zIndex: -1,
               }}
             >
@@ -63,13 +67,11 @@ export default function Home() {
         <Image
           alt={"Login Image"}
           objectFit={"contain"}
-          w={useBreakpointValue({ base: "80%", sm: "70%", md: "50%" })}
-          ml={useBreakpointValue({ base: "6%", sm: "15%", md: "10%" })}
-          mt={useBreakpointValue({ base: "-61%", sm: "-35%", md: "-10px" })}
-          borderRadius={("100%", "100%")}
-          src={
-            "https://i.ibb.co/pJzSHR5/Whats-App-Image-2022-12-31-at-8-45-37-PM.jpg"
-          }
+          w={useBreakpointValue({ base: "80%", sm: "70%", md: "40%" })}
+          ml={useBreakpointValue({ base: "10%", sm: "15%", md: "10%" })}
+          mt={useBreakpointValue({ base: "-15%", sm: "-10%", md: "-10px" })}
+          borderRadius={"130%"}
+          src={"https://i.ibb.co/bmsdDxq/round-pic.png"}
         />
       </Flex>
     </Stack>
