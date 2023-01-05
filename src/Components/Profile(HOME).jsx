@@ -44,7 +44,7 @@ export default function Home() {
             </Text>{" "}
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            Passionate Full-Stack Web Developer with expertise in Scalable
+            A Passionate Full-Stack Web Developer with expertise in Scalable
             Websites/applications using a wide range of front-end skills like
             HTML, CSS, Javascript, React JS, and back-end skills like Node JS,
             Mongo DB, etc.
@@ -67,9 +67,9 @@ export default function Home() {
         <Image
           alt={"Login Image"}
           objectFit={"contain"}
-          w={useBreakpointValue({ base: "80%", sm: "70%", md: "40%" })}
-          ml={useBreakpointValue({ base: "10%", sm: "15%", md: "10%" })}
-          mt={useBreakpointValue({ base: "-15%", sm: "-10%", md: "-10px" })}
+          w={useBreakpointValue({ base: "60%", sm: "70%", md: "40%" })}
+          ml={useBreakpointValue({ base: "20%", sm: "15%", md: "10%" })}
+          mt={useBreakpointValue({ base: "-35%", sm: "-10%", md: "-10px" })}
           borderRadius={"130%"}
           src={"https://i.ibb.co/bmsdDxq/round-pic.png"}
         />
