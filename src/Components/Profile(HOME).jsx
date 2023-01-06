@@ -15,6 +15,7 @@ export default function Home() {
 
   return (
     <Stack
+      id="home"
       bg={"gray.100"}
       minH={isMoreThan820 && isLessThan820 ? "70vh" : "100vh"}
       direction={{ base: "column", md: "row" }}

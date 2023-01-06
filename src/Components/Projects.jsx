@@ -1,6 +1,5 @@
 import {
   Badge,
-  Divider,
   SimpleGrid,
   Stack,
   Text,
@@ -34,7 +33,7 @@ export const Projects = () => {
   };
   return (
     <>
-      <Stack style={contentBody}>
+      <Stack id="projects" style={contentBody}>
         <Text style={headstyle}>Projects</Text>
         <Stack className="projectCard">
           <Fade left>
@@ -70,7 +69,8 @@ export const Projects = () => {
                 <Text pt={"5px"} pb={"20px"}>
                   Airtable is a low-code platform for building collaborative
                   apps. Customize your workflow, collaborate, and achieve
-                  ambitious outcomes.
+                  ambitious outcomes. It was an individual Project built in 5
+                  days.
                 </Text>
                 <Text fontWeight={"500"} fontSize={"18px"}>
                   Tech Stack
@@ -84,7 +84,7 @@ export const Projects = () => {
                     React JS
                   </Badge>{" "}
                   <Badge p={"5px"} colorScheme={"red"}>
-                    Chakra UI
+                    Chakra-UI
                   </Badge>{" "}
                   <Badge p={"5px"} colorScheme={"red"}>
                     Javascript
@@ -153,7 +153,9 @@ export const Projects = () => {
                 </Stack>
                 <Text pt={"5px"} pb={"20px"}>
                   Max Fashion is an E-Commerce website which sells clothes for
-                  Men, Women and Kids.
+                  Men, Women and Kids. It was a collaborative project built by 4
+                  members in 5 days. I developed Cart Page and Checkout page in
+                  this website.
                 </Text>
                 <Text fontWeight={"500"} fontSize={"18px"}>
                   Tech Stack
@@ -240,7 +242,9 @@ export const Projects = () => {
                 </Stack>
                 <Text pt={"5px"} pb={"20px"}>
                   It is an E-commerce website that sells different products of
-                  different categories.
+                  different categories. It was a collaborative project built by
+                  5 members in 5 days. My areas of responsibility was to build
+                  checkout page and cart page.
                 </Text>
                 <Text fontWeight={"500"} fontSize={"18px"}>
                   Tech Stack
