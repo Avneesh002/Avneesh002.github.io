@@ -10,18 +10,20 @@ import { Button } from "@chakra-ui/react";
 import Fade from "react-reveal/Fade";
 import { BsGithub } from "react-icons/bs";
 import { GrDeploy } from "react-icons/gr";
+import "./Project.css";
 
 export const Projects = () => {
   const headstyle = {
-    fontWeight: "500",
-    fontSize: "48px",
+    fontWeight: "800",
+    fontSize: "78px",
+    opacity: "40%",
     textAlign: "center",
   };
 
   const contentBody = {
     backgroundColor: "#EDF2F7",
-    padding: useBreakpointValue({ base: "5px", md: "50px" }),
-    paddingLeft: useBreakpointValue({ base: "0", md: "135px" }),
+    padding: useBreakpointValue({ base: "5px", lg: "50px" }),
+    // paddingLeft: useBreakpointValue({ base: "0", lg: "135px" }),
   };
 
   const subHeading = {
@@ -40,17 +42,23 @@ export const Projects = () => {
             <Stack
               style={transitionS}
               boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
-              bg={"whiteAlpha.700"}
+              transition={"1s"}
               mt={"50px"}
               _hover={{
+                bg: "white",
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
               }}
               direction={useBreakpointValue({
                 base: "column",
-                md: "row",
+                lg: "row",
               })}
             >
-              <Stack justify={"center"} w={"100%"}>
+              <Stack
+                transition={"500ms"}
+                className="giveHover"
+                justify={"center"}
+                w={useBreakpointValue({ base: "100%", lg: "90%" })}
+              >
                 {" "}
                 <img
                   width={"100%"}
@@ -100,8 +108,8 @@ export const Projects = () => {
                   </Badge>{" "}
                 </SimpleGrid>
                 <Stack
-                  pt={useBreakpointValue({ base: "20px", md: "100px" })}
-                  justify={useBreakpointValue({ base: "center", md: "" })}
+                  pt={useBreakpointValue({ base: "20px", md: "80px" })}
+                  justify={useBreakpointValue({ base: "center" })}
                   pb={useBreakpointValue({ base: "20px", md: "20px" })}
                   direction={"row"}
                 >
@@ -125,20 +133,21 @@ export const Projects = () => {
             <Stack
               style={transitionS}
               boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
-              bg={"whiteAlpha.700"}
               mt={"50px"}
+              transition="1s"
               _hover={{
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                bg: "white",
               }}
               direction={useBreakpointValue({
                 base: "column-reverse",
-                md: "row",
+                lg: "row",
               })}
             >
               <Stack
                 // w={useBreakpointValue({
                 //   base: "100%",
-                //   md: "80%",
+                //   lg: "60%",
                 // })}
                 pl={"25px"}
                 pt={"20px"}
@@ -176,8 +185,8 @@ export const Projects = () => {
                   </Badge>{" "}
                 </SimpleGrid>
                 <Stack
-                  pt={useBreakpointValue({ base: "20px", md: "150px" })}
-                  justify={useBreakpointValue({ base: "center", md: "" })}
+                  pt={useBreakpointValue({ base: "20px", md: "30px" })}
+                  justify={useBreakpointValue({ base: "center" })}
                   pb={useBreakpointValue({ base: "20px", md: "20px" })}
                   direction={"row"}
                 >
@@ -195,14 +204,16 @@ export const Projects = () => {
                 </Stack>
               </Stack>
               <Stack
+                transition={"500ms"}
+                className="giveHover"
                 justify={"center"}
                 w={useBreakpointValue({
                   base: "100%",
-                  md: "60%",
+                  lg: "110%",
                 })}
               >
                 {" "}
-                <img width={"100%"} src="./Screenshot (134).png" alt="" />
+                <img src="./Screenshot (134).png" alt="" />
               </Stack>
             </Stack>
           </Fade>
@@ -210,29 +221,41 @@ export const Projects = () => {
           {/* -------------------------------------------------- */}
           <Fade left>
             <Stack
+              className="check1"
               style={transitionS}
               boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
-              bg={"whiteAlpha.700"}
               mt={"50px"}
+              transition="1s"
               _hover={{
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                bg: "white",
               }}
               direction={useBreakpointValue({
                 base: "column",
-                md: "row",
+                lg: "row",
               })}
             >
               <Stack
+                transition={"500ms"}
+                className="giveHover"
                 w={useBreakpointValue({
                   base: "100%",
-                  md: "60%",
+                  lg: "100%",
                 })}
                 justify={"center"}
               >
                 {" "}
                 <img width={"100%"} src="/Screenshot (135).png" alt="" />
               </Stack>
-              <Stack pl={"25px"} pt={"20px"} pr={"10px"}>
+              <Stack
+                // w={useBreakpointValue({
+                //   base: "100%",
+                //   lg: "60%",
+                // })}
+                pl={"25px"}
+                pt={"20px"}
+                pr={"10px"}
+              >
                 <Stack align={"center"} direction={"row"}>
                   {" "}
                   <Text style={subHeading}>Best Buy</Text>{" "}
@@ -243,8 +266,7 @@ export const Projects = () => {
                 <Text pt={"5px"} pb={"20px"}>
                   It is an E-commerce website that sells different products of
                   different categories. It was a collaborative project built by
-                  5 members in 5 days. My areas of responsibility was to build
-                  checkout page and cart page.
+                  5 members in 5 days. I developed checkout and cart page.
                 </Text>
                 <Text fontWeight={"500"} fontSize={"18px"}>
                   Tech Stack
@@ -265,8 +287,8 @@ export const Projects = () => {
                   </Badge>{" "}
                 </SimpleGrid>
                 <Stack
-                  pt={useBreakpointValue({ base: "20px", md: "140px" })}
-                  justify={useBreakpointValue({ base: "center", md: "" })}
+                  pt={useBreakpointValue({ base: "20px", md: "60px" })}
+                  justify={useBreakpointValue({ base: "center" })}
                   pb={useBreakpointValue({ base: "20px", md: "20px" })}
                   direction={"row"}
                 >

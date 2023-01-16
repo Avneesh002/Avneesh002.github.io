@@ -1,0 +1,3 @@
+.giveHover:hover {
+  transform: rotateZ(-2deg) scale3d(1.1, 1.1, 1.1);
+}

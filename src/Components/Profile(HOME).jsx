@@ -9,7 +9,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-export default function Home() {
+export default function Home({ handleResume }) {
   const [isMoreThan820] = useMediaQuery("(min-width:768px)");
   const [isLessThan820] = useMediaQuery("(max-width:1000px)");
 
@@ -45,13 +45,14 @@ export default function Home() {
             </Text>{" "}
           </Heading>
           <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            A Passionate Full-Stack Web Developer with expertise in Scalable
+            A Passionate Full Stack Web Developer with expertise in Scalable
             Websites/applications using a wide range of front-end skills like
-            HTML, CSS, Javascript, React JS, and back-end skills like Node JS,
+            HTML, CSS, Javascript, React JS and back-end skills like Node JS,
             Mongo DB, etc.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button
+              onClick={handleResume}
               rounded={"full"}
               bg={"red.400"}
               color={"white"}
