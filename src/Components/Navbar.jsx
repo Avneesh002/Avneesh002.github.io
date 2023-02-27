@@ -18,16 +18,19 @@ export default function Navbar({ handleResume }) {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box pos={"sticky"} zIndex={"9"} top={"0"}>
+    <Box
+      borderBottom={"1px solid white"}
+      pos={"sticky"}
+      zIndex={"10"}
+      top={"0"}
+    >
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("#151312", "#151312")}
+        color={useColorModeValue("white", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -44,15 +47,19 @@ export default function Navbar({ handleResume }) {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex
+          ml={{ base: "-40px", md: "10px" }}
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+        >
           <Stack
             ml={"20px"}
             direction={"row"}
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
           >
             <img
-              width={"150px"}
-              src="https://i.ibb.co/Y06NZsJ/Avn-1.gif"
+              width={"100px"}
+              src="https://t3.ftcdn.net/jpg/04/44/09/96/240_F_444099621_UqsDpJHug488hKGBO140j10WmOhkkPD4.jpg"
               alt="It-all-typo"
             />
           </Stack>
@@ -68,22 +75,29 @@ export default function Navbar({ handleResume }) {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            onClick={handleResume}
-            display={{ base: "inline-flex", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"red.500"}
-            size={useBreakpointValue({ base: "sm", md: "md" })}
-            href={"#"}
-            _hover={{
-              bg: "red.800",
-            }}
+          <a
+            href="/Avneesh_Grover_Resume.pdf"
+            download="/Avneesh_Grover_Resume.pdf"
+            target={"_blank"}
           >
-            <Text mr={"5px"}>Resume</Text>
-            <BiDownload fontSize={"17px"} />
-          </Button>
+            <Button
+              onClick={handleResume}
+              display={{ base: "inline-flex", md: "inline-flex" }}
+              fontSize={"md"}
+              fontWeight={600}
+              color={"black"}
+              bg={"white"}
+              size={useBreakpointValue({ base: "sm", md: "md" })}
+              href={"#"}
+              _hover={{
+                bg: "black",
+                color: "white",
+              }}
+            >
+              <Text mr={"5px"}>Resume</Text>
+              <BiDownload fontSize={"17px"} />
+            </Button>
+          </a>
         </Stack>
       </Flex>
 
@@ -97,98 +111,71 @@ export default function Navbar({ handleResume }) {
 const DesktopNav = () => {
   return (
     <Stack align={"center"} direction={"row"} spacing={4}>
-      {/* {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
-              <Link
-                p={2}
-                href={navItem.href ?? "#"}
-                fontSize={"lg"}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: "none",
-                  color: linkHoverColor,
-                }}
-              >
-                {navItem.label}
-              </Link>
-            </PopoverTrigger>
-          </Popover>
-        </Box>
-      ))} */}
       <ScrollIntoView selector="#home">
-        <Button variant={"ghost"}>😄 About me</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          🏠 Home
+        </Button>
       </ScrollIntoView>
-      <ScrollIntoView selector="#projects">
-        <Button variant={"ghost"}>📚 Projects</Button>
+      <ScrollIntoView selector="#aboutMe">
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          😄 About me
+        </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#skills">
-        <Button variant={"ghost"}>🧑🏻‍💻 Skills</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          🧑🏻‍💻 Skills
+        </Button>
+      </ScrollIntoView>
+      <ScrollIntoView selector="#projects">
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          📚 Projects
+        </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#contact">
-        <Button variant={"ghost"}>📞 Contact me</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          📞 Contact me
+        </Button>
       </ScrollIntoView>
     </Stack>
   );
 };
 
-// const DesktopSubNav = ({ label, href, subLabel }) => {
-//   return (
-//     <Link
-//       href={href}
-//       role={"group"}
-//       display={"block"}
-//       p={2}
-//       rounded={"md"}
-//       _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-//     >
-//       <Stack direction={"row"} align={"center"}>
-//         <Box>
-//           <Text
-//             transition={"all .3s ease"}
-//             _groupHover={{ color: "pink.400" }}
-//             fontWeight={500}
-//           >
-//             {label}
-//           </Text>
-//           <Text fontSize={"sm"}>{subLabel}</Text>
-//         </Box>
-//         <Flex
-//           transition={"all .3s ease"}
-//           transform={"translateX(-10px)"}
-//           opacity={0}
-//           _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-//           justify={"flex-end"}
-//           align={"center"}
-//           flex={1}
-//         >
-//           <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
-//         </Flex>
-//       </Stack>
-//     </Link>
-//   );
-// };
-
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
+      transition={"500ms"}
+      position={"absolute"}
+      width="100%"
+      zIndex={"3"}
+      bg={useColorModeValue("#151312", " #151312")}
+      color={"white"}
       p={4}
       display={{ md: "none" }}
     >
       <ScrollIntoView selector="#home">
-        <Button variant={"ghost"}> About me</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          🏠 Home
+        </Button>
       </ScrollIntoView>
-      <ScrollIntoView selector="#projects">
-        <Button variant={"ghost"}> Projects</Button>
+      <ScrollIntoView selector="#aboutMe">
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          😄 About me
+        </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#skills">
-        <Button variant={"ghost"}> Skills</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          🧑🏻‍💻 Skills
+        </Button>
+      </ScrollIntoView>
+      <ScrollIntoView selector="#projects">
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          📚 Projects
+        </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#contact">
-        <Button variant={"ghost"}> Contact me</Button>
+        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+          📞 Contact me
+        </Button>
       </ScrollIntoView>
     </Stack>
   );

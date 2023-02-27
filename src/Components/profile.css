@@ -1,0 +1,16 @@
+.dpBg {
+  background-color: #feb2b2;
+  /* border: 1px solid; */
+  transition: 1s;
+  animation: backgroundProp 8s infinite;
+}
+@keyframes backgroundProp {
+  0% {
+  }
+  50% {
+    /* transform: rotateZ(360deg); */
+    background-color: #e53e3e;
+  }
+  100% {
+  }
+}

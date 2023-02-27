@@ -1,0 +1,78 @@
+.neonText:hover {
+  color: red;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+}
+/* .label {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  position: relative;
+  top: 40px;
+  transition: 500ms;
+  left: 20px;
+}
+textarea:valid,
+input:valid {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+input:valid:focus ~ .label {
+  top: 20px;
+  background-color: black;
+  padding: 0px 35px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  z-index: 1;
+}
+.email {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+} */
+
+.InputBox {
+  color: white;
+
+  position: relative;
+}
+.InputBox input textarea {
+  border: 1px solid white;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.InputBox span {
+  transition: 1500ms;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+.InputBox input:valid ~ span,
+.InputBox input:focus ~ span {
+  top: -18px;
+  z-index: 2;
+  color: black;
+  font-weight: 500;
+  transform: translateX(10px) translateY(10px);
+  font-size: 0.85em;
+  padding: 3px 15px;
+  background-color: white;
+}
+.InputBox textarea:valid ~ span,
+.InputBox textarea:focus ~ span {
+  top: -18px;
+  z-index: 2;
+  color: black;
+  font-weight: 500;
+  transform: translateX(10px) translateY(10px);
+  font-size: 0.85em;
+  padding: 3px 15px;
+  background-color: white;
+}

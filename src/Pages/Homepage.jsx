@@ -1,12 +1,12 @@
-import { Text } from "@chakra-ui/react";
-import FloatingBalloons from "../Components/FloatingBalloons";
 import GithubCalendar from "../Components/GithubCalendar";
-import { Projects } from "../Components/Projects";
 import TechnicalSkills from "../Components/TechnicalSkills";
 import Navbar from "./../Components/Navbar";
 import Home from "./../Components/Profile(HOME)";
 import ContactMe from "./../Components/ContactMe";
 import Footer from "./../Components/Footer";
+import { Project } from "../Components/Projects";
+import { HomeSection } from "./../Components/HomeSection";
+import Tools from "../Components/Tools";
 
 export const Homepage = () => {
   const handleResume = () => {
@@ -17,12 +17,12 @@ export const Homepage = () => {
   return (
     <>
       <Navbar handleResume={handleResume} />
+      <HomeSection />
       <Home handleResume={handleResume} />
-      {/* <FloatingBalloons /> */}
-      <Projects />
-      <GithubCalendar />
       <TechnicalSkills />
-
+      <Tools />
+      <Project />
+      <GithubCalendar />
       <ContactMe />
       <Footer />
     </>

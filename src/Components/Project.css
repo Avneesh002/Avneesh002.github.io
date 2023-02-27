@@ -1,3 +1,40 @@
 .giveHover:hover {
-  transform: rotateZ(-2deg) scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+.giveHover {
+  transition: 500ms;
+  z-index: 10;
+}
+
+.projectDesc {
+  transition: 1s infinite;
+  animation: give 5s infinite;
+}
+
+@keyframes give {
+  0% {
+    /* transform: rotateZ(2deg) scale3d(1.1, 1.1, 1.1); */
+  }
+  35% {
+    transform: rotateZ(1deg);
+  }
+  50% {
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+  65% {
+    transform: rotateZ(-1deg);
+  }
+  100% {
+    /* transform: rotateZ(2deg) scale3d(1.1, 1.1, 1.1); */
+  }
+}
+
+.projectCard:hover {
+  box-shadow: "1px 10px 20px 4px";
+}
+
+.neonText:hover {
+  color: red;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }

@@ -1,12 +1,14 @@
-import { Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import "./ContactMe";
 
 const GithubCalendar = () => {
   const headstyle = {
     fontWeight: "800",
     fontSize: "78px",
-    opacity: "40%",
+    opacity: "60%",
+    color: "white",
     textAlign: "center",
   };
 
@@ -15,22 +17,32 @@ const GithubCalendar = () => {
       id="stats"
       align={"center"}
       pt={useBreakpointValue({ base: "50px", lg: "150px" })}
-      // pl={useBreakpointValue({ base: "0px", lg: "75px" })}
-      bg={"#F1F1FB"}
+      bg={"#151312"}
     >
-      <Text style={headstyle}>Stats</Text>
+      <Text mb={"100px"} style={headstyle}>
+        <span className="neonText">S</span>
+        <span className="neonText">t</span>
+        <span className="neonText">a</span>
+        <span className="neonText">t</span>
+        <span className="neonText">s</span>
+      </Text>
       <Stack
-        boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
         align={"center"}
         transition="1s"
         w={useBreakpointValue({ base: "100%", lg: "93%" })}
         p={useBreakpointValue({ base: "15px", lg: "30px" })}
-        _hover={{
-          bg: "white",
-        }}
       >
-        <GitHubCalendar username="avneesh002" />
-        <img src="https://streak-stats.demolab.com?user=avneesh002" />
+        <GitHubCalendar color={"red"} username="avneesh002" />
+        <Flex direction={useBreakpointValue({ base: "column" })}>
+          <img
+            alt="github-streaks"
+            src="https://streak-stats.demolab.com?user=avneesh002"
+          />
+          <img
+            alt="github-languages"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=avneesh002"
+          />
+        </Flex>
       </Stack>
     </Stack>
   );

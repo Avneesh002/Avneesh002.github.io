@@ -1,4 +1,4 @@
-.skillIcon1 {
+/* .skillIcon1 {
   animation: float 7s infinite;
 }
 .skillIcon2 {
@@ -43,17 +43,11 @@
 }
 @keyframes float {
   0% {
-    top: 0px;
-    left: 0px;
   }
   50% {
-    top: -20px;
-    left: 40px;
+    transform: translateX(30px) rotateZ(70deg);
   }
   100% {
-    top: 0px;
-    left: 0px;
-    /* transform: translate3d(4px, 3px, 5px); */
   }
 }
 
@@ -118,16 +112,23 @@
   height: 100px;
 }
 .skillIcon11:hover {
-  transition: 1s;
+  transition: 50ms ease-out;
   animation: view 1s;
   width: 100px;
   height: 100px;
 }
-@keyframes view {
+/* @keyframes view {
   0% {
   }
 
   100% {
     transform: rotateZ(360deg);
   }
+} */
+
+.neonText:hover {
+  cursor: pointer;
+  color: red;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }

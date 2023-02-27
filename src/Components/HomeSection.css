@@ -1,0 +1,83 @@
+.react-typeout-caret::after {
+  content: "|";
+  color: red;
+  margin-left: 5px;
+  opacity: 1;
+  font-weight: 500;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+.react-typeout-caret::first-letter {
+  font-size: 200%;
+}
+.tilt-image {
+  transition: transform 0.2s;
+}
+
+.tilt-image:hover {
+  transform-origin: center center;
+  transform: rotateX(calc(-30deg + 60deg * ((var(--y) / var(--height)))));
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.firstLetter::first-letter {
+  font-size: 200%;
+}
