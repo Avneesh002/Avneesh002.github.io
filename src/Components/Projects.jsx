@@ -40,6 +40,34 @@ export const Project = () => {
           >
             {/* ---------------------------------------------- */}
 
+            <Fade right>
+              <ProjectCard
+                imgSrc={
+                  "https://user-images.githubusercontent.com/112627297/221422870-1e70c6c5-dd1e-4168-b781-32da146b2778.png"
+                }
+                heading={"Zee-5"}
+                description={
+                  "MovieMatrix is one stop solution for any information regarding movies, web series, tv-shows, you can find trailers, details add reviews or make a watchlist. We provide smart content search & recommendations. It is a clone of Zee-5."
+                }
+                techStack={[
+                  "React JS",
+                  "Chakra-UI",
+                  "Javascript",
+                  "HTML",
+                  "CSS",
+                  "Axios",
+                  "Express JS",
+                  "Mongoose",
+                  "Redux",
+                  "Node JS",
+                  "Mongo DB",
+                ]}
+                githubLink={"https://github.com/hr927/MovieMatrix-Zee5_Clone"}
+                deployLink={"https://moviematrix.vercel.app/"}
+              />
+            </Fade>
+            {/* ---------------------------------------------- */}
+
             <Fade left>
               <ProjectCard
                 imgSrc={"./Screenshot (155).png"}

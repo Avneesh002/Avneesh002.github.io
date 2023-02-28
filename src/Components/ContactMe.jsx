@@ -18,7 +18,6 @@ import emailjs from "@emailjs/browser";
 const ContactMe = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
 
   const form = useRef();
   const toast = useToast();
@@ -95,17 +94,17 @@ const ContactMe = () => {
         <Stack direction={useBreakpointValue({ base: "column", lg: "row" })}>
           <Stack direction={"row"}>
             <a href="https://www.linkedin.com/in/avneesh002/">
-              <Button w="130px" colorScheme={"linkedin"}>
+              <Button w="140px" colorScheme={"linkedin"}>
                 <BsLinkedin /> <Text ml={"10px"}>LinkedIn</Text>
               </Button>
             </a>
             <a href="https://github.com/Avneesh002">
               <Button
-                w="130px"
+                w="140px"
                 _hover={{
                   border: "1px solid black",
-                  bg: "white",
-                  color: "black",
+                  bg: "black",
+                  color: "white",
                 }}
                 color={"white"}
                 bg={"black"}
@@ -116,12 +115,12 @@ const ContactMe = () => {
           </Stack>
           <Stack direction={"row"}>
             <a href="mailto:avneeshgrover8@gmail.com">
-              <Button w="130px" colorScheme={"red"}>
+              <Button w="140px" colorScheme={"red"}>
                 <SiGmail /> <Text ml={"10px"}>Gmail</Text>
               </Button>
             </a>
             <a href="https://wa.me/+919805981877">
-              <Button w="130px" colorScheme={"whatsapp"}>
+              <Button w="140px" colorScheme={"whatsapp"}>
                 <AiOutlineWhatsApp /> <Text ml={"10px"}>Whatsapp</Text>
               </Button>
             </a>

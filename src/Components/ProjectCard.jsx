@@ -4,12 +4,10 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  Link,
   useBreakpointValue,
   Flex,
 } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-import Fade from "react-reveal/Fade";
 import { BsGithub } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
 import "./Project.css";
@@ -49,7 +47,7 @@ export const ProjectCard = ({
     >
       <Stack className="giveHover">
         {" "}
-        <img src={imgSrc} alt="" />
+        <img loading="lazy" src={imgSrc} alt="" />
       </Stack>
       <Stack className="projectDesc" p={"30px"}>
         <Flex align={"center"} gap="10px" direction={"row"}>

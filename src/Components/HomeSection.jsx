@@ -1,5 +1,4 @@
 import { Image, Stack, Text } from "@chakra-ui/react";
-import { useState } from "react";
 import TypeOut from "react-typeout";
 import "./HomeSection.css";
 import Tilt from "react-parallax-tilt";
@@ -16,7 +15,12 @@ export function HomeSection() {
       bg={"#EDF2F7"}
     >
       <Image
+        transition={"500ms"}
         filter="grayscale(70%)"
+        _hover={{
+          filter: "auto",
+          border: "none",
+        }}
         zIndex={"0"}
         position="absolute"
         top={"24"}
@@ -31,7 +35,7 @@ export function HomeSection() {
           transition={"500ms"}
           zIndex={"0"}
           filter="auto"
-          blur="2px"
+          blur="3px"
           _hover={{
             blur: "0px",
             border: "none",

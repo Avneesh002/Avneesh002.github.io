@@ -1,43 +1,43 @@
-/* .skillIcon1 {
+.skillIcon1 img {
   animation: float 7s infinite;
 }
-.skillIcon2 {
-  animation-delay: 20s;
+.skillIcon2 img {
+  animation-delay: 0.3s;
   animation: float 7s infinite;
 }
-.skillIcon3 {
+.skillIcon3 img {
   animation-delay: 4s;
   animation: float 7s infinite;
 }
-.skillIcon4 {
+.skillIcon4 img {
   animation-delay: 8s;
   animation: float 7s infinite;
 }
-.skillIcon5 {
+.skillIcon5 img {
   animation-delay: 8s;
   animation: float 7s infinite;
 }
-.skillIcon6 {
+.skillIcon6 img {
   animation-delay: 10s;
   animation: float 7s infinite;
 }
-.skillIcon7 {
+.skillIcon7 img {
   animation-delay: 12s;
   animation: float 7s infinite;
 }
-.skillIcon8 {
+.skillIcon8 img {
   animation-delay: 14s;
   animation: float 7s infinite;
 }
-.skillIcon9 {
+.skillIcon9 img {
   animation-delay: 16s;
   animation: float 7s infinite;
 }
-.skillIcon10 {
+.skillIcon10 img {
   animation-delay: 18s;
   animation: float 7s infinite;
 }
-.skillIcon11 {
+.skillIcon11 img {
   animation-delay: 20s;
   animation: float 7s infinite;
 }
@@ -45,90 +45,20 @@
   0% {
   }
   50% {
-    transform: translateX(30px) rotateZ(70deg);
+    transform: translateY(-10px);
   }
   100% {
   }
 }
-
-.skillIcon1:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon2:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon3:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon4:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon5:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon6:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon7:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon8:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon9:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon10:hover {
-  transition: 1s;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-.skillIcon11:hover {
-  transition: 50ms ease-out;
-  animation: view 1s;
-  width: 100px;
-  height: 100px;
-}
-/* @keyframes view {
-  0% {
-  }
-
-  100% {
-    transform: rotateZ(360deg);
-  }
-} */
 
 .neonText:hover {
   cursor: pointer;
   color: red;
   text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
     0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+.neonText {
+  font-family: Rampart One;
 }

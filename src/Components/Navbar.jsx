@@ -19,7 +19,7 @@ export default function Navbar({ handleResume }) {
 
   return (
     <Box
-      borderBottom={"1px solid white"}
+      boxShadow="rgba(0, 0, 0, 0.04) 0px 3px 5px"
       pos={"sticky"}
       zIndex={"10"}
       top={"0"}

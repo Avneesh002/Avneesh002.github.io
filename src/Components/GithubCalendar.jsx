@@ -32,7 +32,11 @@ const GithubCalendar = () => {
         w={useBreakpointValue({ base: "100%", lg: "93%" })}
         p={useBreakpointValue({ base: "15px", lg: "30px" })}
       >
-        <GitHubCalendar color={"red"} username="avneesh002" />
+        <GitHubCalendar
+          hideColorLegend={true}
+          color={"red"}
+          username="avneesh002"
+        />
         <Flex direction={useBreakpointValue({ base: "column" })}>
           <img
             alt="github-streaks"

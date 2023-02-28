@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  Box,
-  Flex,
   Image,
   SimpleGrid,
   Stack,
@@ -66,6 +64,7 @@ const Tools = () => {
         {items.map((el) => (
           <Tooltip key={el.path} label={el.label} aria-label="A tooltip">
             <Stack
+              boxShadow={"1px 4px 4px 2px black"}
               className={el.name}
               transition={"1s"}
               height={"85px"}
@@ -74,8 +73,14 @@ const Tools = () => {
               justify={"center"}
               direction="column"
               mb="38px"
+              cursor={"pointer"}
             >
               <Image
+                transition={"500ms"}
+                _hover={{
+                  transform: "translateY(-20px)",
+                }}
+                mb={"10px"}
                 borderBottom={"1px solid white"}
                 width={"70px"}
                 h="70px"
