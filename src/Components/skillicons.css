@@ -1,51 +1,51 @@
 .skillIcon1 img {
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon2 img {
   animation-delay: 0.3s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon3 img {
   animation-delay: 4s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon4 img {
   animation-delay: 8s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon5 img {
   animation-delay: 8s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon6 img {
   animation-delay: 10s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon7 img {
   animation-delay: 12s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon8 img {
   animation-delay: 14s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon9 img {
   animation-delay: 16s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon10 img {
   animation-delay: 18s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 .skillIcon11 img {
   animation-delay: 20s;
-  animation: float 7s infinite;
+  animation: float 4s infinite;
 }
 @keyframes float {
   0% {
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   100% {
   }

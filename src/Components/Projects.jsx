@@ -89,7 +89,7 @@ export const Project = () => {
             </Fade>
 
             {/* ------------------------------------------- */}
-            <Fade right>
+            {/* <Fade right>
               <ProjectCard
                 imgSrc={"./Screenshot (134).png"}
                 heading={"Max Fashion"}
@@ -100,7 +100,7 @@ export const Project = () => {
                 githubLink={"https://github.com/Binodgith/hunky-potato-4915"}
                 deployLink={"https://team-max-u3.netlify.app/"}
               />
-            </Fade>
+            </Fade> */}
 
             {/* --------------------------------------------- */}
 

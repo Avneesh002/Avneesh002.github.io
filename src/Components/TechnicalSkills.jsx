@@ -110,7 +110,7 @@ const TechnicalSkills = () => {
         {items.map((el) => (
           <Tooltip key={el.path} label={el.label} aria-label="A tooltip">
             <Stack
-              boxShadow={"1px 4px 4px 2px black"}
+              boxShadow={"2px 4px 4px 4px black"}
               className={el.name}
               transition={"1s"}
               height={"85px"}
