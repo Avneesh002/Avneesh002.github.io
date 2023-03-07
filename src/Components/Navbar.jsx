@@ -36,7 +36,7 @@ export default function Navbar({ handleResume }) {
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
+          display={{ base: "flex", lg: "none" }}
         >
           <IconButton
             onClick={onToggle}
@@ -53,7 +53,7 @@ export default function Navbar({ handleResume }) {
           justify={{ base: "center", md: "start" }}
         >
           <Stack
-            ml={"20px"}
+            ml={{ base: "20px", md: "-10px", lg: "20px" }}
             direction={"row"}
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
           >
@@ -64,7 +64,7 @@ export default function Navbar({ handleResume }) {
             />
           </Stack>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", lg: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -76,8 +76,8 @@ export default function Navbar({ handleResume }) {
           spacing={6}
         >
           <a
-            href="/Avneesh_Grover_Resume.pdf"
-            download="/Avneesh_Grover_Resume.pdf"
+            href="/fp06_471-Avneesh-Grover-Resume.pdf"
+            download="/fp06_471-Avneesh-Grover-Resume.pdf"
             target={"_blank"}
           >
             <Button
@@ -110,7 +110,7 @@ export default function Navbar({ handleResume }) {
 
 const DesktopNav = () => {
   return (
-    <Stack align={"center"} direction={"row"} spacing={4}>
+    <Stack align={"center"} direction={"row"} spacing={{ lg: 4 }}>
       <ScrollIntoView selector="#home">
         <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
           🏠 Home
@@ -150,7 +150,7 @@ const MobileNav = () => {
       bg={useColorModeValue("#151312", " #151312")}
       color={"white"}
       p={4}
-      display={{ md: "none" }}
+      display={{ lg: "none" }}
     >
       <ScrollIntoView selector="#home">
         <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>

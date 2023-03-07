@@ -8,7 +8,7 @@ function App() {
   }, []);
 
   return (
-    <div cursor="pointer" className="App">
+    <div className="App">
       <header className="App-header">
         <Homepage />
       </header>

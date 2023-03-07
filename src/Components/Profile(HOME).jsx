@@ -76,8 +76,8 @@ export default function Home({ handleResume }) {
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <a
-                href="/Avneesh_Grover_Resume.pdf"
-                download={"/Avneesh_Grover_Resume.pdf"}
+                href="/fp06_471-Avneesh-Grover-Resume.pdf"
+                download={"fp06_471-Avneesh-Grover-Resume.pdf"}
                 target="_blank"
               >
                 <Button

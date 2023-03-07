@@ -29,7 +29,7 @@ export const ProjectCard = ({
       m="auto"
       w={useBreakpointValue({
         base: "350px",
-        lg: "600px",
+        lg: "500px",
       })}
       pb={useBreakpointValue({
         base: "20px",
@@ -66,7 +66,7 @@ export const ProjectCard = ({
         <SimpleGrid
           textAlign={"center"}
           spacing={1}
-          columns={{ base: "3", md: "6" }}
+          columns={{ base: "3", md: "4" }}
         >
           {techStack.map((el) => {
             return (
