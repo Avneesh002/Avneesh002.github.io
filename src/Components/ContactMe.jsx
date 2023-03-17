@@ -93,14 +93,17 @@ const ContactMe = () => {
       >
         <Stack direction={useBreakpointValue({ base: "column", lg: "row" })}>
           <Stack direction={"row"}>
-            <a href="https://www.linkedin.com/in/avneesh002/">
-              <Button w="140px" colorScheme={"linkedin"}>
+            <a
+              id="contact-linkedin"
+              href="https://www.linkedin.com/in/avneesh002/"
+            >
+              <Button w="150px" colorScheme={"linkedin"}>
                 <BsLinkedin /> <Text ml={"10px"}>LinkedIn</Text>
               </Button>
             </a>
-            <a href="https://github.com/Avneesh002">
+            <a id="contact-github" href="https://github.com/Avneesh002">
               <Button
-                w="140px"
+                w="150px"
                 _hover={{
                   border: "1px solid black",
                   bg: "black",
@@ -113,15 +116,15 @@ const ContactMe = () => {
               </Button>
             </a>
           </Stack>
-          <Stack direction={"row"}>
-            <a href="mailto:avneeshgrover8@gmail.com">
-              <Button w="140px" colorScheme={"red"}>
-                <SiGmail /> <Text ml={"10px"}>Gmail</Text>
+          <Stack direction={{ base: "column", md: "row" }}>
+            <a id="contact-email" href="mailto:avneeshgrover8@gmail.com">
+              <Button colorScheme={"red"}>
+                <SiGmail /> <Text ml={"10px"}>Avneeshgrover8@gmail.com</Text>
               </Button>
             </a>
-            <a href="https://wa.me/+919805981877">
-              <Button w="140px" colorScheme={"whatsapp"}>
-                <AiOutlineWhatsApp /> <Text ml={"10px"}>Whatsapp</Text>
+            <a id="contact-phone" href="https://wa.me/+919805981877">
+              <Button colorScheme={"whatsapp"}>
+                <AiOutlineWhatsApp /> <Text ml={"10px"}>9805981877</Text>
               </Button>
             </a>
           </Stack>

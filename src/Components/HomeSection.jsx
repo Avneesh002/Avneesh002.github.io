@@ -2,7 +2,7 @@ import { Button, Image, Stack, Text } from "@chakra-ui/react";
 import TypeOut from "react-typeout";
 import "./HomeSection.css";
 import Tilt from "react-parallax-tilt";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export function HomeSection() {
   return (
@@ -51,16 +51,48 @@ export function HomeSection() {
         </Tilt>
       </Stack>
       <Stack
+        bg={"url(blobanimation.svg)"}
+        bgRepeat="no-repeat"
+        bgSize={"cover"}
         align={"center"}
-        h={{ base: "40%", lg: "60%" }}
+        h={{ base: "50%", lg: "70%" }}
         w={{ base: "100%", lg: "40%" }}
       >
-        <Image
-          className="imgg"
-          h={"100%"}
-          width={{ base: "90%", lg: "60%" }}
-          src="https://ouch-cdn2.icons8.com/aVubHyBkWOEPF713Wh-CdQFQzUl-4dxFWyJTSIUS9E0/rs:fit:256:307/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2Y2NzRiZjM0LTI4/OTEtNGM5Ni04OGVm/LWJiYzM3YTY1MzUw/MS5wbmc.png"
-        />
+        <div class="hit-area">
+          <div class="hitbox" id="a-1"></div>
+          <div class="hitbox" id="a-2"></div>
+          <div class="hitbox" id="a-3"></div>
+          <div class="hitbox" id="a-4"></div>
+          <div class="hitbox" id="a-5"></div>
+          <div class="hitbox" id="b-1"></div>
+          <div class="hitbox" id="b-2"></div>
+          <div class="hitbox" id="b-3"></div>
+          <div class="hitbox" id="b-4"></div>
+          <div class="hitbox" id="b-5"></div>
+          <div class="hitbox" id="c-1"></div>
+          <div class="hitbox" id="c-2"></div>
+          <div class="hitbox" id="c-3"></div>
+          <div class="hitbox" id="c-4"></div>
+          <div class="hitbox" id="c-5"></div>
+          <div class="hitbox" id="d-1"></div>
+          <div class="hitbox" id="d-2"></div>
+          <div class="hitbox" id="d-3"></div>
+          <div class="hitbox" id="d-4"></div>
+          <div class="hitbox" id="d-5"></div>
+          <div class="hitbox" id="e-1"></div>
+          <div class="hitbox" id="e-2"></div>
+          <div class="hitbox" id="e-3"></div>
+          <div class="hitbox" id="e-4"></div>
+          <div class="hitbox" id="e-5"></div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eyelid"></div>
+          <div class="eyelid"></div>
+        </div>
       </Stack>
     </Stack>
   );

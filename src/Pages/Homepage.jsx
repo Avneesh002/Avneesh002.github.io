@@ -149,9 +149,10 @@ function Cursor() {
 export const Homepage = () => {
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/14pcxWHnyCzvE0d_JJWfoAT5v6hl9lglu/view?usp=sharing"
+      "https://drive.google.com/file/d/14pcxWHnyCzvE0d_JJWfoAT5v6hl9lglu/view?usp=share_link"
     );
   };
+
   return (
     <>
       <Cursor />

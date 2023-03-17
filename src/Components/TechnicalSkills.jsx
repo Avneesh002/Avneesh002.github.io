@@ -111,7 +111,7 @@ const TechnicalSkills = () => {
           <Tooltip key={el.path} label={el.label} aria-label="A tooltip">
             <Stack
               boxShadow={"2px 4px 4px 4px black"}
-              className={el.name}
+              className={(el.name, "skills-card")}
               transition={"1s"}
               height={"85px"}
               w={"100px"}
@@ -124,6 +124,7 @@ const TechnicalSkills = () => {
               }}
             >
               <Image
+                className="skills-card-img"
                 transition={"500ms"}
                 mb="10px"
                 borderBottom={"1px solid white"}
@@ -133,6 +134,7 @@ const TechnicalSkills = () => {
                 alt=""
               />
               <Text
+                className="skills-card-name"
                 transition={"500ms ease-in-out"}
                 p={"2px 8px"}
                 borderRight={"1px solid white"}

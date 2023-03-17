@@ -33,18 +33,26 @@ const GithubCalendar = () => {
         p={useBreakpointValue({ base: "15px", lg: "30px" })}
       >
         <GitHubCalendar
+          class="react-activity-calendar"
           hideColorLegend={true}
           color={"red"}
           username="avneesh002"
         />
         <Flex direction={useBreakpointValue({ base: "column" })}>
           <img
+            id="github-streak-stats"
             alt="github-streaks"
-            src="https://streak-stats.demolab.com?user=avneesh002"
+            src="https://github-readme-streak-stats.herokuapp.com?user=avneesh002&date_format=j%20M%5B%20Y%5D&type=png"
           />
           <img
+            id="github-top-langs"
             alt="github-languages"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=avneesh002"
+          />
+          <img
+            id="github-stats-card"
+            alt="github-stats"
+            src="https://github-readme-stats.vercel.app/api?username=avneesh002"
           />
         </Flex>
       </Stack>

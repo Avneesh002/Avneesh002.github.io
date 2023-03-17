@@ -35,7 +35,7 @@ export const ProjectCard = ({
         base: "20px",
         lg: "50px",
       })}
-      className="projectCard"
+      className="project-card"
       borderRadius={"10px"}
       h={useBreakpointValue({
         base: "auto",
@@ -52,18 +52,26 @@ export const ProjectCard = ({
       <Stack className="projectDesc" p={"30px"}>
         <Flex align={"center"} gap="10px" direction={"row"}>
           {" "}
-          <Text style={subHeading}>{heading}</Text>{" "}
+          <Text className="project-title" style={subHeading}>
+            {heading}
+          </Text>{" "}
           <Text fontWeight={"500"} fontSize={"12px"} pt={"10px"}>
             Clone
           </Text>
         </Flex>
-        <Text fontWeight={"500"} pt={"5px"} pb={"20px"}>
+        <Text
+          className="project-description"
+          fontWeight={"500"}
+          pt={"5px"}
+          pb={"20px"}
+        >
           {description}
         </Text>
         <Text fontWeight={"500"} fontSize={"19px"}>
           Tech Stack
         </Text>
         <SimpleGrid
+          class="project-tech-stack"
           textAlign={"center"}
           spacing={1}
           columns={{ base: "3", md: "4" }}
@@ -81,7 +89,11 @@ export const ProjectCard = ({
           direction={"row"}
           justify={"space-evenly"}
         >
-          <a href={githubLink} target={"_blank"}>
+          <a
+            className="project-github-link"
+            href={githubLink}
+            target={"_blank"}
+          >
             <Button
               transition="500ms"
               bg={"black"}
@@ -96,7 +108,11 @@ export const ProjectCard = ({
               <BsGithub /> <Text ml={"15px"}>Github</Text>
             </Button>
           </a>
-          <a href={deployLink} target={"_blank"}>
+          <a
+            className="project-deployed-link"
+            href={deployLink}
+            target={"_blank"}
+          >
             <Button
               transition="500ms"
               bg={"black"}

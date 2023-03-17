@@ -19,6 +19,7 @@ export default function Navbar({ handleResume }) {
 
   return (
     <Box
+      id="nav-menu"
       boxShadow="rgba(0, 0, 0, 0.04) 0px 3px 5px"
       pos={"sticky"}
       zIndex={"10"}
@@ -76,11 +77,14 @@ export default function Navbar({ handleResume }) {
           spacing={6}
         >
           <a
+            id="resume-link-1"
+            className="nav-link resume"
             href="/fp06_471-Avneesh-Grover-Resume.pdf"
-            download="/fp06_471-Avneesh-Grover-Resume.pdf"
+            download="fp06_471-Avneesh-Grover-Resume.pdf"
             target={"_blank"}
           >
             <Button
+              id="resume-button-1"
               onClick={handleResume}
               display={{ base: "inline-flex", md: "inline-flex" }}
               fontSize={"md"}
@@ -112,27 +116,47 @@ const DesktopNav = () => {
   return (
     <Stack align={"center"} direction={"row"} spacing={{ lg: 4 }}>
       <ScrollIntoView selector="#home">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link home"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           🏠 Home
         </Button>
       </ScrollIntoView>
-      <ScrollIntoView selector="#aboutMe">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+      <ScrollIntoView selector="#about">
+        <Button
+          className="nav-link about"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           😄 About me
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#skills">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link skills"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           🧑🏻‍💻 Skills
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#projects">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link projects"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           📚 Projects
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#contact">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link contact"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           📞 Contact me
         </Button>
       </ScrollIntoView>
@@ -153,27 +177,47 @@ const MobileNav = () => {
       display={{ lg: "none" }}
     >
       <ScrollIntoView selector="#home">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link home"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           🏠 Home
         </Button>
       </ScrollIntoView>
-      <ScrollIntoView selector="#aboutMe">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+      <ScrollIntoView selector="#about">
+        <Button
+          className="nav-link about"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           😄 About me
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#skills">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link skills"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           🧑🏻‍💻 Skills
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#projects">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link projects"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           📚 Projects
         </Button>
       </ScrollIntoView>
       <ScrollIntoView selector="#contact">
-        <Button _hover={{ bg: "black", color: "white" }} variant={"ghost"}>
+        <Button
+          className="nav-link contact"
+          _hover={{ bg: "black", color: "white" }}
+          variant={"ghost"}
+        >
           📞 Contact me
         </Button>
       </ScrollIntoView>

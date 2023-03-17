@@ -16,11 +16,12 @@ export default function Home({ handleResume }) {
 
   return (
     <Stack
-      id="aboutMe"
+      id="about"
       bg={"#151312"}
       minH={isMoreThan820 && isLessThan820 ? "90vh" : "100vh"}
     >
       <Text
+        className="about section"
         mt={"100px"}
         mb={"100px"}
         color="white"
@@ -64,11 +65,15 @@ export default function Home({ handleResume }) {
                 Hey , I'm 🙋‍♂️
               </Text>
               <br />{" "}
-              <Text color={"red.500"} as={"span"}>
+              <Text id="user-detail-name" color={"red.500"} as={"span"}>
                 Avneesh Grover
               </Text>{" "}
             </Heading>
-            <Text fontSize={{ base: "md", lg: "lg" }} color={"white"}>
+            <Text
+              id="user-detail-intro"
+              fontSize={{ base: "md", lg: "lg" }}
+              color={"white"}
+            >
               A Passionate Full Stack Web Developer with expertise in Scalable
               Websites/applications using a wide range of front-end skills like
               HTML, CSS, Javascript, React JS and back-end skills like Node JS,
@@ -76,11 +81,13 @@ export default function Home({ handleResume }) {
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <a
-                href="/fp06_471-Avneesh-Grover-Resume.pdf"
+                id="resume-link-2"
+                href={"/fp06_471-Avneesh-Grover-Resume.pdf"}
                 download={"fp06_471-Avneesh-Grover-Resume.pdf"}
                 target="_blank"
               >
                 <Button
+                  id="resume-button-2"
                   onClick={handleResume}
                   rounded={"full"}
                   bg={"white"}
@@ -114,6 +121,7 @@ export default function Home({ handleResume }) {
               borderRadius="50%"
             >
               <Image
+                className="home-img"
                 transition={"1s ease-in-out"}
                 _hover={{
                   boxShadow: " -6.5px 0.5px 32px 14.5px #c54545;",
